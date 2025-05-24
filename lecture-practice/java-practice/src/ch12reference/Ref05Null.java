@@ -2,7 +2,7 @@ package ch12reference;
 
 public class Ref05Null {
     public static void main(String[] args) {
-        Data data = null; // "참조값이 없다" 라는 값이라고 보면된다.
+        Data data = null; // "참조값이 없다" 라는 값이라고 보면된다. (참조형 변수에만 사용가능)
         System.out.println("1. data = " + data);
 
         data = new Data();

@@ -2,7 +2,9 @@ package ch15package;
 
 //import ch15package.pack1.Member1;
 //import ch15package.pack1.Member2;
-import ch15package.pack1.*; //pack1 패키지의 내의 모든 것을 import
+
+//pack1 패키지의 모든 클래스를 import [하위 패키지는 포함x (하위, 상위 상관없이 다른 패키지인 것)]
+import ch15package.pack1.*;
 
 public class PackageMain2 {
     public static void main(String[] args) {

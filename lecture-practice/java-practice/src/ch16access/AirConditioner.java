@@ -5,8 +5,10 @@ package ch16access;
  */
 public class AirConditioner {
 
-    // 제약조건이 있어야할 필드가 외부에서 직접 접근할 수 있는 상황
-    int temperature;
+
+    // private: 해당 클래스 내부에서만 호출 가능
+    // 제약조건이 있어야할 필드가 외부에서 직접 접근할 수 있는 상황이 되어선 안된다.
+    private int temperature;
 
     public AirConditioner(int temperature) {
         this.temperature = temperature;

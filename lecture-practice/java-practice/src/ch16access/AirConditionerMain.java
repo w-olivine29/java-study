@@ -13,9 +13,9 @@ public class AirConditionerMain {
         airConditioner.showTemperature();
 
 
-        // 제약조건이 있어야할 필드가 외부에서 직접 접근할 수 있는 상황
+        // 해당 필드를 private 로 변경함으로써 외부에서 접근 불가
         System.out.println("==== 필드에 직접 접근하여 온도값 수정 ========");
-        airConditioner.temperature = -5;
+        //airConditioner.temperature = -5; // java: temperature has private access in ch16access.AirConditioner
         airConditioner.showTemperature();
 
     }

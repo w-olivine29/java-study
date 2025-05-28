@@ -1,7 +1,7 @@
-package ch20polymorphism.section1basic.step2casting.casting2instanceof;
+package ch20polymorphism.section1basic.sub2casting.step2instanceof;
 
-import ch20polymorphism.section1basic.step1.Child;
-import ch20polymorphism.section1basic.step1.Parent;
+import ch20polymorphism.section1basic.sub1.Child;
+import ch20polymorphism.section1basic.sub1.Parent;
 
 public class InstanceofMain {
     public static void main(String[] args) {

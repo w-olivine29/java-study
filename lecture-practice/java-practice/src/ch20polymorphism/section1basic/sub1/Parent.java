@@ -1,4 +1,4 @@
-package ch20polymorphism.section1basic.step1;
+package ch20polymorphism.section1basic.sub1;
 
 public class Parent {
 

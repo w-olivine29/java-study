@@ -1,4 +1,4 @@
-package ch20polymorphism.section1basic.step2casting.casting3overriding;
+package ch20polymorphism.section1basic.sub2casting.step3overriding;
 
 public class Child extends Parent {
 

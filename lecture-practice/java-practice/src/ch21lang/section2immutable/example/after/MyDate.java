@@ -12,17 +12,16 @@ public class MyDate {
         this.day = day;
     }
 
-//    public MyDate changeDate(MyDate date) {
-//        return date;
-//    }
 
-    public MyDate changeYear(int changeYear) {
+    public MyDate withYear(int changeYear) {
         return new MyDate(changeYear, month, day);
     }
-    public MyDate changeMonth(int changeMonth) {
+
+    public MyDate withMonth(int changeMonth) {
         return new MyDate(year, changeMonth, day);
     }
-    public MyDate changeDay(int changeDay) {
+
+    public MyDate withDay(int changeDay) {
         return new MyDate(year, month, changeDay);
     }
 

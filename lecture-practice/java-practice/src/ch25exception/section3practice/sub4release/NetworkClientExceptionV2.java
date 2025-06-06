@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step2recovery;
+package ch25exception.section3practice.sub4release;
 
 
 public class NetworkClientExceptionV2 extends Exception { // 접속, 전송

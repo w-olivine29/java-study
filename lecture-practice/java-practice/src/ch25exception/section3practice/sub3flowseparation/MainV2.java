@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step3flowseparation;
+package ch25exception.section3practice.sub3flowseparation;
 
 import java.util.Scanner;
 

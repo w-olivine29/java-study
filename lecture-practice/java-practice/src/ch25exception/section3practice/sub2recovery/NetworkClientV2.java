@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step4release;
+package ch25exception.section3practice.sub2recovery;
 
 
 public class NetworkClientV2 {

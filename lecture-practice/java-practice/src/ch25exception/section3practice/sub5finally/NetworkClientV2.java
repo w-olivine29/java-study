@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step5finally;
+package ch25exception.section3practice.sub5finally;
 
 
 public class NetworkClientV2 {

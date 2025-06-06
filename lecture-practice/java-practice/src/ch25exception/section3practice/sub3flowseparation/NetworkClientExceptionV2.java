@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step5finally;
+package ch25exception.section3practice.sub3flowseparation;
 
 
 public class NetworkClientExceptionV2 extends Exception { // 접속, 전송

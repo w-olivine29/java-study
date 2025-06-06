@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step1start;
+package ch25exception.section3practice.sub3flowseparation;
 
 
 public class NetworkClientV2 {
@@ -13,7 +13,6 @@ public class NetworkClientV2 {
         this.address = address;
     }
 
-
     // 외부서버 연결
     public void connect() throws NetworkClientExceptionV2 {
         if (connectError) {
@@ -21,7 +20,8 @@ public class NetworkClientV2 {
                     "connectError", address + " - Connection fail");
         }
 
-        System.out.println(address + " - Connection successful"); //연결 성공
+        //연결 성공
+        System.out.println(address + " - Connection successful");
     }
 
     // 데이터전송
@@ -31,7 +31,8 @@ public class NetworkClientV2 {
                     "sendError", address + " - send fail");
         }
 
-        System.out.println(address + " - data transfer: " + data); //전송 성공
+        //전송 성공
+        System.out.println(address + " - data transfer: " + data);
     }
 
     public void disconnect() {

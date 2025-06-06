@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step2recovery;
+package ch25exception.section3practice.sub1start;
 
 
 public class NetworkClientV2 {
@@ -13,6 +13,7 @@ public class NetworkClientV2 {
         this.address = address;
     }
 
+
     // 외부서버 연결
     public void connect() throws NetworkClientExceptionV2 {
         if (connectError) {
@@ -20,8 +21,7 @@ public class NetworkClientV2 {
                     "connectError", address + " - Connection fail");
         }
 
-        //연결 성공
-        System.out.println(address + " - Connection successful");
+        System.out.println(address + " - Connection successful"); //연결 성공
     }
 
     // 데이터전송
@@ -31,8 +31,7 @@ public class NetworkClientV2 {
                     "sendError", address + " - send fail");
         }
 
-        //전송 성공
-        System.out.println(address + " - data transfer: " + data);
+        System.out.println(address + " - data transfer: " + data); //전송 성공
     }
 
     public void disconnect() {

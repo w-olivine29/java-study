@@ -1,4 +1,4 @@
-package ch25exception.section3practice.step1start;
+package ch25exception.section3practice.sub1start;
 
 
 /*

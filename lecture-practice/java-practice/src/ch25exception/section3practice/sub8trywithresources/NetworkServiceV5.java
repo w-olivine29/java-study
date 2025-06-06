@@ -19,7 +19,17 @@ public class NetworkServiceV5 {
          AutoCloseable의 close()가 자동으로 호출됨 (catch 블록보다 먼저 실행됨)
 
          참고: finally 블록은 catch 블록 이후에 실행됨
-         */
+        */
+
+
+        /* try-with-resources 문에서 AutoCloseable 객체를 여러 개 선언가능
+
+         세미콜론으로 구분
+         try (
+            Resource1 res1 = new Resource1();
+            Resource2 res2 = new Resource2();
+            ){ 실행문 }
+        */
 
     }
 

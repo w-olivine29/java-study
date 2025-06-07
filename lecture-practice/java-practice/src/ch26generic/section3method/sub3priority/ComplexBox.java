@@ -1,4 +1,4 @@
-package ch26generic.section3method.step3priority;
+package ch26generic.section3method.sub3priority;
 
 import ch26generic.section3method.Animal;
 

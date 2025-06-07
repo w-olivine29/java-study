@@ -1,4 +1,4 @@
-package ch26generic.section3method.step2practice;
+package ch26generic.section3method.sub2practice;
 
 
 import ch26generic.section3method.*;

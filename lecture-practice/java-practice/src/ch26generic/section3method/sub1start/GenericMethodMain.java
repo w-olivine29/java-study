@@ -1,4 +1,4 @@
-package ch26generic.section3method.step1start;
+package ch26generic.section3method.sub1start;
 
 public class GenericMethodMain {
     public static void main(String[] args) {

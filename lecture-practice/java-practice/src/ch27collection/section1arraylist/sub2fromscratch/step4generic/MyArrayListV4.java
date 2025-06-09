@@ -97,7 +97,7 @@ public class MyArrayListV4<E> {  // E) Element의 줄임말
     }
 
     // 검색 기능
-    public int indexOf(Object e) {
+    public int indexOf(E e) {
         for (int i = 0; i < size; i++) {
             if (elementData[i] == e) {
                 return i;

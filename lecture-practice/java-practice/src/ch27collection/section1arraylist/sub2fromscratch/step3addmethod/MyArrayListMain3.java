@@ -1,4 +1,4 @@
-package ch27collection.section1arraylist.sub2fromscratch.step3addfunction;
+package ch27collection.section1arraylist.sub2fromscratch.step3addmethod;
 
 public class MyArrayListMain3 {
     public static void main(String[] args) {

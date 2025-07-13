@@ -5,7 +5,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import static ch09executor.ExecutorUtils.*;
+import static ch09executor.sub1.ExecutorUtils.*;
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 

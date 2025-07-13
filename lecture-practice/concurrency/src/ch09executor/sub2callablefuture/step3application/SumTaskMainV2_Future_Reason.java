@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 import static util.MyLogger.log;
 
-public class SumTaskMainV2 {
+public class SumTaskMainV2_Future_Reason {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         SumTask sumTask1 = new SumTask(1, 50);

@@ -1,4 +1,4 @@
-package ch09executor.sub1;
+package ch09executor;
 
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;

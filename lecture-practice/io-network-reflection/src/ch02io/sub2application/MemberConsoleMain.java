@@ -1,12 +1,14 @@
 package ch02io.sub2application;
 
 import ch02io.sub2application.impl.step1memory.MemoryMemberRepository;
+import ch02io.sub2application.impl.step2filestream.FileMemberRepository;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class MemberConsoleMain {
-    private static final MemberRepository repository = new MemoryMemberRepository();
+    //private static final MemberRepository repository = new MemoryMemberRepository();
+    private static final MemberRepository repository = new FileMemberRepository();
 
     public static void main(String[] args) {
 

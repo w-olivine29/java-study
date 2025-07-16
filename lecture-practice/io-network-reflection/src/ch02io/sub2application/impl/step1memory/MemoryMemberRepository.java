@@ -1,4 +1,4 @@
-package ch02io.sub2application.impl;
+package ch02io.sub2application.impl.step1memory;
 
 import ch02io.sub2application.Member;
 import ch02io.sub2application.MemberRepository;

@@ -1,6 +1,6 @@
 package ch02io.sub2application;
 
-import ch02io.sub2application.impl.MemoryMemberRepository;
+import ch02io.sub2application.impl.step1memory.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Scanner;

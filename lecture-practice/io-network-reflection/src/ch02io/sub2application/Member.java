@@ -1,6 +1,8 @@
 package ch02io.sub2application;
 
-public class Member {
+import java.io.Serializable;
+
+public class Member implements Serializable { // 직렬화 대상
     private String id;
     private String name;
     private Integer age;

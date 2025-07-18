@@ -1,4 +1,4 @@
-package ch04network.sub4trywithresource.autocloseable;
+package ch04network.sub4resourcedisposal.autocloseable;
 
 public class ResourceCloseMainV1 {
     public static void main(String[] args) {

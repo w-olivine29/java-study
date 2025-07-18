@@ -1,4 +1,4 @@
-package ch04network.sub4trywithresource.autocloseable;
+package ch04network.sub4resourcedisposal.autocloseable;
 
 
 // 가상의 시나리오

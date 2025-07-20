@@ -1,4 +1,4 @@
-package ch04network.sub5execption.connect.step2timeout;
+package ch04network.sub5execption.section1connect.step2timeout;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

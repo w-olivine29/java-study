@@ -1,4 +1,4 @@
-package ch04network.sub5execption.connect.step1start;
+package ch04network.sub5execption.section1connect.step1start;
 
 import java.io.IOException;
 import java.net.ConnectException;

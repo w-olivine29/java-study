@@ -1,5 +1,7 @@
 package ch05chatprogram.server;
 
+import ch05chatprogram.server.commandmanager.CommandManager;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;

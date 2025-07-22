@@ -1,15 +1,17 @@
-package ch05chatprogram.server;
+package ch05chatprogram.server.commandmanager;
+
+import ch05chatprogram.server.Session;
+import ch05chatprogram.server.SessionManager;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
 import java.util.List;
 
 public class CommandManagerV2 implements CommandManager {
 
     private final SessionManager sessionManager;
-    private static final String DELIMITER = "\\|"; // 정규표현식에서 |는 or연산자이기때문에 리터럴 문자로 인식하게끔 이스케이프 문자 사용
+    private static final String DELIMITER = "\\|"; //split() 에서는 정규식 사용 - 정규표현식에서 |는 or연산자이기때문에 리터럴 문자로 인식하게끔 이스케이프 문자 사용
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
 
     public CommandManagerV2(SessionManager sessionManager) {

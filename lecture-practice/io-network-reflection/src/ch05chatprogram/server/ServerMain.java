@@ -1,5 +1,9 @@
 package ch05chatprogram.server;
 
+import ch05chatprogram.server.commandmanager.CommandManager;
+import ch05chatprogram.server.commandmanager.CommandManagerV2;
+import ch05chatprogram.server.commandmanager.CommandManagerV3;
+
 import java.io.IOException;
 
 import static ch05chatprogram.utils.MyLogger.log;
@@ -12,7 +16,7 @@ public class ServerMain {
         SessionManager sessionManager = new SessionManager();
 
         // 점진적으로 버전업 예정
-        CommandManager commandManager = new CommandManagerV2(sessionManager);
+        CommandManager commandManager = new CommandManagerV3(sessionManager);
 
         Server server = new Server(PORT, sessionManager, commandManager);
 

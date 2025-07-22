@@ -1,4 +1,7 @@
-package ch05chatprogram.server;
+package ch05chatprogram.server.commandmanager;
+
+import ch05chatprogram.server.Session;
+import ch05chatprogram.server.SessionManager;
 
 import java.io.IOException;
 

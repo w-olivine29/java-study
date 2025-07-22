@@ -38,7 +38,7 @@ public class SessionManager {
         }
     }
 
-    public List<String> getAllUserName() {
+    public synchronized List<String> getAllUserName() {
         List<String> usernames = new ArrayList<>();
 
         for (Session session : sessions) {

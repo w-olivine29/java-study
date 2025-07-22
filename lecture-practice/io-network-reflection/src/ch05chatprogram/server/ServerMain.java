@@ -12,7 +12,7 @@ public class ServerMain {
         SessionManager sessionManager = new SessionManager();
 
         // 점진적으로 버전업 예정
-        CommandManager commandManager = new CommandManagerV1(sessionManager);
+        CommandManager commandManager = new CommandManagerV2(sessionManager);
 
         Server server = new Server(PORT, sessionManager, commandManager);
 

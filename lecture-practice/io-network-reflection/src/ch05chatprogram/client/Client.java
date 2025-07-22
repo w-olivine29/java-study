@@ -5,8 +5,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-import static ch05chatprogram.utils.MyLogger.log;
-import static ch05chatprogram.utils.SocketClose.closeAll;
+import static utils.MyLogger.log;
+import static utils.SocketClose.closeAll;
 
 
 // 기존에 실습했던 것과 달리 조금 더 객체지향적으로 설계

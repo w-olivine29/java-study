@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class NormalCloseServer {
     public static void main(String[] args) throws IOException, InterruptedException {

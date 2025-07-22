@@ -6,9 +6,8 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-import static ch04network.utils.MyLogger.log;
-import static ch04network.utils.SocketClose.*;
-
+import static utils.MyLogger.log;
+import static utils.SocketClose.closeAll;
 
 
 public class ClientV4 {

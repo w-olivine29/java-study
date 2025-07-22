@@ -5,8 +5,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
-import static ch04network.utils.SocketClose.*;
+import static utils.MyLogger.log;
+import static utils.SocketClose.closeAll;
 
 // 버전을 클라이언트, 서버 버전에 맞춰놓음
 public class SessionV6 implements Runnable {

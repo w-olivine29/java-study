@@ -3,7 +3,7 @@ package ch04network.sub5execption.section2close.step1normal;
 import java.io.*;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class NormalCloseClient {
     public static void main(String[] args) throws IOException {

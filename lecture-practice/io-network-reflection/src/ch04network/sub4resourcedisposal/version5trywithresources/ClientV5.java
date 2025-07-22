@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 
 public class ClientV5 {

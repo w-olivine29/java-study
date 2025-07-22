@@ -3,11 +3,10 @@ package ch04network.sub5execption.section2close.step2forced;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class ResetCloseClient {
     public static void main(String[] args) throws IOException, InterruptedException {

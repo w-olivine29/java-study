@@ -7,7 +7,8 @@ import ch05chatprogram.server.commandmanager.CommandManagerV4;
 
 import java.io.IOException;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
+
 
 public class ServerMain {
     private static final int PORT = 12345;

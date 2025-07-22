@@ -1,11 +1,11 @@
-package ch04network.utils;
+package utils;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class SocketClose {
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 
 public class SessionManager {

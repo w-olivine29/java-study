@@ -2,7 +2,8 @@ package ch05chatprogram.client;
 
 import java.io.IOException;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
+
 
 public class ClientMain {
 

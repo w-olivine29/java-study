@@ -1,14 +1,14 @@
 package ch05chatprogram.server;
 
 import ch05chatprogram.server.commandmanager.CommandManager;
-import ch05chatprogram.utils.SocketClose;
+import utils.SocketClose;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 
 public class Session implements Runnable {

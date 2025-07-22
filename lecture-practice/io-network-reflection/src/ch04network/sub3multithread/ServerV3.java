@@ -1,12 +1,10 @@
 package ch04network.sub3multithread;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 
 //코드분석 추가설명은 pdf 참고 (필수)

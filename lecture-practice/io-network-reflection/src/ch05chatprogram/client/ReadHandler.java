@@ -3,7 +3,7 @@ package ch05chatprogram.client;
 import java.io.DataInputStream;
 import java.io.IOException;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class ReadHandler implements Runnable {
 

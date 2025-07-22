@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 public class Server {
 

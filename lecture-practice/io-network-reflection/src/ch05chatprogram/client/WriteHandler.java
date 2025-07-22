@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-import static ch05chatprogram.utils.MyLogger.log;
+import static utils.MyLogger.log;
+
 
 public class WriteHandler implements Runnable {
 

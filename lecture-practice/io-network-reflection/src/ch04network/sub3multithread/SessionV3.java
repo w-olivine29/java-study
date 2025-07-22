@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-import static ch04network.utils.MyLogger.log;
+import static utils.MyLogger.log;
 
 // 버전을 클라이언트, 서버 버전에 맞춰놓음
 public class SessionV3 implements Runnable {

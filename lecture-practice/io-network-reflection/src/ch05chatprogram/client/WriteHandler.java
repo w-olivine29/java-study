@@ -9,7 +9,7 @@ import static ch05chatprogram.utils.MyLogger.log;
 
 public class WriteHandler implements Runnable {
 
-    private static final String DELIMITER = "\\|"; // 정규표현식에서 |는 or연산자이기때문에 리터럴 문자로 인식하게끔 이스케이프 문자 사용
+    private static final String DELIMITER = "|"; // 문자열 생성시에는 실제 파이프 문자 사용
     private final DataOutputStream outputStream;
     private final Client client;
     private boolean closed;

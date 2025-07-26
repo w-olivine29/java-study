@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static utils.MyLogger.log;
 
 public class HttpRequest {
 
@@ -21,8 +22,7 @@ public class HttpRequest {
         parseRequestLine(reader);
         parseHeaders(reader);
 
-        //TODO: 메시지 바디
-
+        parseBody(reader);
     }
 
 
@@ -70,6 +70,33 @@ public class HttpRequest {
         while (!((line = reader.readLine()).isEmpty())) { //공백라인 만나기전까지
             String[] headerParts = line.split(":");
             this.headers.put(headerParts[0].strip(), headerParts[1].strip()); // 앞뒤 공백 제거하고 넣기
+        }
+    }
+
+    private void parseBody(BufferedReader reader) throws IOException {
+
+        // Content-Length 가 있는 경우 메시지 바디가 있다는 것
+        if (!headers.containsKey("Content-Length")) {
+            return;
+        }
+
+        // Content-Length 길이만큼 스트림에서 바디의 데이터를 읽어온다.
+        int contentLength = Integer.parseInt(headers.get("Content-Length"));
+        char[] bodyChars = new char[contentLength];
+        int read = reader.read(bodyChars);
+        
+        // 읽어온 길이가 다르면 문제가 있다는 것
+        if (read != contentLength) {
+            throw new IOException("File to read entire body.Expected" + contentLength + "bytes, but read" + read);
+        }
+        String body = new String(bodyChars);
+        log("HTTP Message Body: " + body);
+
+        // 해당 타입과 동일하면, URL 의 쿼리 스트링과 같은 방식으로 파싱
+        String contentType = headers.get("Content-Type");
+        if ("application/x-www-form-urlencoded".equals(contentType)) {
+            // id={}&name={}&age={}
+            parseQueryParameters(body);
         }
     }
 

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/concurrency/concurrency.iml" filepath="$PROJECT_DIR$/concurrency/concurrency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io-network-reflection/src/io-network-reflection.iml" filepath="$PROJECT_DIR$/io-network-reflection/src/io-network-reflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambda-stream-functional-programming/lambda-stream-functional-programming.iml" filepath="$PROJECT_DIR$/lambda-stream-functional-programming/lambda-stream-functional-programming.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture-practice.iml" filepath="$PROJECT_DIR$/lecture-practice.iml" />
     </modules>
   </component>

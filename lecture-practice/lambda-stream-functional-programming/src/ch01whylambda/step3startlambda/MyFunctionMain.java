@@ -1,6 +1,6 @@
-package ch01lambda.sub1whylambda.step3startlambda;
+package ch01whylambda.step3startlambda;
 
-import ch01lambda.MyFunction;
+import ch01whylambda.MyFunction;
 
 public class MyFunctionMain {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package ch01lambda.sub1whylambda.step3startlambda;
+package ch01whylambda.step3startlambda;
 
-import ch01lambda.Procedure;
+import ch01whylambda.Procedure;
 
 public class ProcedureMain {
     public static void main(String[] args) {

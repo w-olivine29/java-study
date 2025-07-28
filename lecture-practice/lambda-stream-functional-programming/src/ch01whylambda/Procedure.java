@@ -1,4 +1,4 @@
-package ch01lambda;
+package ch01whylambda;
 
 public interface Procedure {
 

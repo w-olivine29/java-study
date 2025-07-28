@@ -1,4 +1,4 @@
-package ch01lambda.sub1whylambda.step2behaviorparameterization;
+package ch01whylambda.step2behaviorparameterization;
 
 import java.util.Random;
 

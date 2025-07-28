@@ -1,4 +1,4 @@
-package ch01lambda.sub1whylambda.step1valueparameterization;
+package ch01whylambda.step1valueparameterization;
 
 // 변하는 문자열 데이터를 매개변수를 통해 외부에서 전달받기 (변하지 않는 부분은 그대로 유지)
 // 핵심은 변하는 부분과 변하지 않는 부분을 분리하는 것

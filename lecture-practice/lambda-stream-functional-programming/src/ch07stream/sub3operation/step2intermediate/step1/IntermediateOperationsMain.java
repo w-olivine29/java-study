@@ -27,8 +27,7 @@ public class IntermediateOperationsMain {
                 .forEach(n -> System.out.print(n + " ")); //1 2 3 4 5 6 7 8
 
 
-        System.out.println("\n\n4. sorted -" +
-                " 기본 정렬 =======================================================");
+        System.out.println("\n\n4. sorted -" + " 기본 정렬 =======================================================");
         Stream.of(4, 2, 6, 0, 7, 9, 8, 1)
                 .sorted()
                 .forEach(n -> System.out.print(n + " ")); //0 1 2 4 6 7 8 9
@@ -79,6 +78,7 @@ public class IntermediateOperationsMain {
         numbers2.stream()
                 .takeWhile(n -> n < 5)
                 .forEach(n -> System.out.print(n + " ")); //1 2 3 4
+        // 조건문이 만족하는 동안 take 해라 (forEach 를)
 
 
         System.out.println("\n\n8. dropWhile (Java 9++)  - 조건을 만족하는 동안까지만 건너뛰기 =======================================================");
@@ -88,5 +88,6 @@ public class IntermediateOperationsMain {
         numbers2.stream()
                 .dropWhile(n -> n < 5) // 5보다 작은 동안은 건너뛰기 (5를 만나면 조건문 자체를 탈출, 그 이후의 요소들은 조건문 적용 x)
                 .forEach(n -> System.out.print(n + " ")); //5 1 2 3
+        // 조건문이 만족하는 동안 무시해라 (forEach를)
     }
 }

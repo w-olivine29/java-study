@@ -101,7 +101,7 @@ public class TerminalOperationMain {
 
         System.out.println("\n\n11. anyMatch - 조건을 만족하는 요소 존재 여부 ===================================================================");
         boolean hasEven = numbers.stream()
-                .allMatch(n -> n % 2 == 0);
+                .anyMatch(n -> n % 2 == 0);
         System.out.println("hasEven = " + hasEven);
 
 

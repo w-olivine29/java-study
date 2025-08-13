@@ -27,6 +27,7 @@ public class OptionalRetrievalMain {
         //String emptyValue = empty.get(); //NoSuchElementException - No value present
 
 
+        // orElse() vs orElseGet() -> ch08optional/sub4lazyevaluation/step3optional 참고
         System.out.println("\n== 3. orElse() ===========================================");
         // 값이 있으면 그 값, 없으면 지정된 기본값 사용
 

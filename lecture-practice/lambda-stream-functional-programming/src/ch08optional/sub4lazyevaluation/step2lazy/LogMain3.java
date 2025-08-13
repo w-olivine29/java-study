@@ -47,6 +47,7 @@ public class LogMain3 {
     값이 실제로 필요할때 (사용될 때) 까지 계산을 미루는 것
     
     => 이 특성 덕분에 스트림이 지연 연산이 가능한 것
+        ch07stream/sub2basic/step4lazy 참고
 */
 
 

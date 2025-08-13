@@ -4,6 +4,8 @@ import ch04applylambda.sub4stream.step3generic.MyStreamV3;
 
 import java.util.List;
 
+//ch08optional/sub4lazyevaluation 참고
+
 // 파이프라인
 public class LazyEvalMain3_Optimization {
     public static void main(String[] args) {

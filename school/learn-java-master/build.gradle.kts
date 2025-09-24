@@ -14,6 +14,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 
     testImplementation("org.assertj:assertj-core:3.26.3") // 테스트 코드를 위한 의존성 추가
+    testImplementation("net.datafaker:datafaker:2.4.2") // 테스트 위한 픽스쳐 세팅 위함
 }
 
 tasks.test {

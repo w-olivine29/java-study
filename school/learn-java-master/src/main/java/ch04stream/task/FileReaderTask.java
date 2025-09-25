@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntFunction;
 import java.util.stream.Stream;
 
 /* 파일 Stream 처리
@@ -23,9 +24,23 @@ public class FileReaderTask {
         try {
 
             Path filePath = Path.of(fileName);
-            settingFile(filePath, "Donkey Sweet Potato \nLemon olive coffee 치킨 \n\n Water Cabbage");
+            settingFile(filePath, "Donkey7 9Sweet Potato6 \nLemon30 olive 29coffee 치킨 \n\n Water Cabbage");
 
-            printCharsFromLines(getTextLineStream(filePath), upperCasePrinter());
+            // 모든 라인 대문자 변환 출력 (한 줄 단위로 문자열 통일 처리)
+            printLines(getTextLineStream(filePath), String::toUpperCase);
+
+
+            // 한 줄 단위 -> 문자단위로 처리 (문자마다 원하는 변환 가능)
+            printLines(getTextLineStream(filePath), mapChars(codePoint -> {
+
+                if (Character.isDigit(codePoint)) {
+                    return '*';
+                }
+                if (Character.isLowerCase(codePoint)) {
+                    return (char) Character.toUpperCase(codePoint);
+                }
+                return (char) Character.toLowerCase(codePoint);
+            }));
 
         } catch (IOException e) {
             System.out.println("IOException 발생: " + e.getMessage());
@@ -36,37 +51,24 @@ public class FileReaderTask {
     }
 
 
-    public static void printCharsFromLines(Stream<String> readLines, Consumer<Integer> consumer) {
+    public static void printLines(Stream<String> readLines, Function<String, String> lineTransformer) {
 
         readLines.forEach(line -> {
-            printChars(line, consumer);
-            System.out.println();
+            System.out.println(line.transform(lineTransformer));
         });
-
     }
 
 
-    public static void printChars(String text, Consumer<Integer> consumer) {
+    // 문자 단위 처리 가능한 함수
+    public static Function<String, String> mapChars(IntFunction<Character> charMapper) {
+        return line -> {
+            StringBuilder sb = new StringBuilder();
 
-        // Arrays.stream() 은 char[] 받지 않음
-        // chars()로 해당 문자들의 code point 로 이뤄진 IntStream
-        text.chars()
-                .forEach(consumer::accept);
-    }
+            line.chars()
+                    .mapToObj(charMapper) // 문자에 대한 처리를 동적으로 받기
+                    .forEach(sb::append);
 
-
-    public static Consumer<Integer> upperCasePrinter() {
-
-        // code point ->  char 타입 캐스팅 -> 출력
-        return charNum -> {
-
-            if (Character.isLowerCase(charNum)) {
-                System.out.print((char) Character.toUpperCase(charNum));
-
-            } else {
-                // 소문자가 아니라면 그대로 출력
-                System.out.print((char) charNum.intValue());
-            }
+            return sb.toString();
         };
     }
 

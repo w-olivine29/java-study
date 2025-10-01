@@ -14,18 +14,26 @@ public class DequeStackMain {
         deque.push(2);
         deque.push(3);
         deque.push(4);
-        System.out.println("deque = " + deque);
+        System.out.println("deque = " + deque); //[4, 3, 2, 1]
         
         // 다음 꺼낼 데이터 확인 (단순 조회)
+
+        // Deque의 peek는 peekFirst 를 반환하기때문에, 스택 자료구조로 활용하려면, peekLast() 사용해야함
         System.out.println("deque.peek() = " + deque.peek()); //4
-        
+        System.out.println("deque.peekLast() = " + deque.peekLast()); //1
+
         // 데이터 꺼내기
         System.out.println("deque.pop() = " + deque.pop()); //4
         System.out.println("deque.pop() = " + deque.pop()); //3
         System.out.println("deque.pop() = " + deque.pop()); //2
         System.out.println("deque.pop() = " + deque.pop()); //1
-        //System.out.println("deque.pop() = " + deque.pop()); // NoSuchElementException
 
+        System.out.println("deque.peek() = " + deque.peek()); //null
+        System.out.println("deque.peekLast() = " + deque.peekLast()); //null
+
+        //System.out.println("deque.pop() = " + deque.pop()); // NoSuchElementException
+        System.out.println("deque.pollLast() = " + deque.pollLast()); // null
+        //System.out.println("deque.removeLast() = " + deque.removeLast()); // NoSuchElementException
         
     }
 }

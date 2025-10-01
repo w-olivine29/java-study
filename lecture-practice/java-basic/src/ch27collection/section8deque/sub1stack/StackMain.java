@@ -21,6 +21,13 @@ public class StackMain {
         System.out.println("pop = " + pop); //4
         System.out.println("stack = " + stack); //[1, 2, 3]
 
+
+        // search(): 해당 요소의 스택깊이(위치) 반환
+        System.out.println("stack.search(1) = " + stack.search(1)); //3
+        System.out.println("stack.search(1) = " + stack.search(2)); //2
+        System.out.println("stack.search(1) = " + stack.search(3)); //1
+        System.out.println("stack.search(1) = " + stack.search(4)); //-1
+
         stack.pop();
         stack.pop();
         stack.pop();
@@ -31,7 +38,6 @@ public class StackMain {
         //stack.peek(); // EmptyStackException
 
         System.out.println("stack.isEmpty() = " + stack.isEmpty()); //true
-
 
 
         /* Stack 클래스 사용 X
